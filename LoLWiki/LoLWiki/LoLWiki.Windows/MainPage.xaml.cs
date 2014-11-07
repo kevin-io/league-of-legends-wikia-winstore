@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +26,9 @@ namespace LoLWiki
         public MainPage()
         {
             this.InitializeComponent();
+            //Task task = new Task(WikiaDotNet.WikiaDotNet.GetRevisionsContent("http://leagueoflegends.wikia.com/", new string[] { "Template:Data_Ziggs" }));
+
+            DebugTxt.Text = WikiaDotNet.WikiaDotNet.GetRevisionsContent("http://leagueoflegends.wikia.com/", new string[]{"Template:Data_Ziggs"}).Result;
         }
     }
 }
