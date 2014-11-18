@@ -27,8 +27,8 @@ namespace LoLWiki
         {
             this.InitializeComponent();
             //Task task = new Task(WikiaDotNet.WikiaDotNet.GetRevisionsContent("http://leagueoflegends.wikia.com/", new string[] { "Template:Data_Ziggs" }));
-
-            DebugTxt.Text = WikiaDotNet.WikiaDotNet.GetRevisionsContent("http://leagueoflegends.wikia.com/", new string[]{"Template:Data_Ziggs"}).Result;
+            //this.Frame.Navigate(typeof(ChampionPage));
+            DebugTxt.Text = WikiaDotNet.WikiaDotNet.GetAllImages("http://leagueoflegends.wikia.com", new string[] { "Ziggs" }).Result;
         }
     }
 }
