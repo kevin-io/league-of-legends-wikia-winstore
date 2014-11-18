@@ -15,8 +15,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)CommonClasses\LoLWiki\Champion.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)CommonClasses\Utilities\Utilities.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CommonClasses\WikiaDotNet\WikiaDotNet.cs" />
   </ItemGroup>
 </Project>
